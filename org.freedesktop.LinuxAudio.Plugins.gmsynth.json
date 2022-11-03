@@ -27,23 +27,11 @@
             "build-options": {
                 "env": {
                     "PREFIX": "${FLATPAK_DEST}"
-                },
-                "arch": {
-                    "aarch64": {
-                        "env": {
-                            "OPTIMIZATIONS": "-ffast-math -fomit-frame-pointer -O3 -fno-finite-math-only -DNDEBUG"
-                        }
-                    },
-                    "arm": {
-                        "env": {
-                            "OPTIMIZATIONS": "-ffast-math -fomit-frame-pointer -O3 -fno-finite-math-only -DNDEBUG"
-                        }
-                    }
                 }
             },
             "build-commands": [
-                "make",
-                "make install LV2DIR=${FLATPAK_DEST}/lv2"
+                "make -j${FLATPAK_BUILDER_N_JOBS}",
+                "make -j${FLATPAK_BUILDER_N_JOBS} install LV2DIR=${FLATPAK_DEST}/lv2"
             ],
             "post-install": [
                 "install -Dm644 --target-directory=${FLATPAK_DEST}/share/metainfo org.freedesktop.LinuxAudio.Plugins.gmsynth.metainfo.xml",
@@ -53,8 +41,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://github.com/x42/gmsynth.lv2/archive/v0.5.0.tar.gz",
-                    "sha256": "25e6afd63bea140a41d259cecb0907fabb172a0d71cc2a86d3bd0d0c0277ae56"
+                    "url": "https://github.com/x42/gmsynth.lv2/archive/v0.5.1.tar.gz",
+                    "sha256": "e8382b2263f1bd2c9791ba34a33b7a2ca94ba19d45957f075898416f56ccfa4d"
                 },
                 {
                     "type": "file",
