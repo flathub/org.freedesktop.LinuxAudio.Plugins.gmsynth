@@ -10,6 +10,7 @@
   <update_contact>hub_AT_figuiere.net</update_contact>
   <developer_name>x42</developer_name>
   <releases>
+    <release date="2025-06-24" version="0.6.3" />
     <release date="2025-02-12" version="0.6.2" />
     <release date="2025-01-18" version="0.6.1">
       <url>https://github.com/x42/gmsynth.lv2/releases/tag/v0.6.1</url>
