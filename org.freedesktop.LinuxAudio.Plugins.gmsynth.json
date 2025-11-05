@@ -37,8 +37,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://github.com/x42/gmsynth.lv2/archive/v0.6.2.tar.gz",
-                    "sha256": "c3ea1a1e8cd05f3dc878ea4f51b6277dbcf6d8d523adf33c69e39a08393cbd27"
+                    "url": "https://github.com/x42/gmsynth.lv2/archive/v0.6.3.tar.gz",
+                    "sha256": "d63dcd1164fc794a6504c89bd3eb08868852d6d65c1223e15c9a0a620d9ab41e"
                 },
                 {
                     "type": "file",
