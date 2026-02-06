@@ -31,14 +31,13 @@
                 "make -j${FLATPAK_BUILDER_N_JOBS} install LV2DIR=${FLATPAK_DEST}/lv2"
             ],
             "post-install": [
-                "install -Dm644 --target-directory=${FLATPAK_DEST}/share/metainfo org.freedesktop.LinuxAudio.Plugins.gmsynth.metainfo.xml",
-                "install -Dm644 -t $FLATPAK_DEST/share/licenses/gmsynth COPYING"
+                "install -Dm644 org.freedesktop.LinuxAudio.Plugins.gmsynth.metainfo.xml -t ${FLATPAK_DEST}/share/metainfo"
             ],
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://github.com/x42/gmsynth.lv2/archive/v0.6.3.tar.gz",
-                    "sha256": "d63dcd1164fc794a6504c89bd3eb08868852d6d65c1223e15c9a0a620d9ab41e"
+                    "url": "https://github.com/x42/gmsynth.lv2/archive/v0.6.4.tar.gz",
+                    "sha256": "71e9877a41be595c3850a6af305893ad76f440dda7826bab138c3bc97ed0581e"
                 },
                 {
                     "type": "file",
